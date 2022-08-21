@@ -1,0 +1,70 @@
+average program:
+
+sum=0
+count=0
+choice=1
+while choice==1:
+    no=int(input("\nEnter your number : "))
+    sum=sum+no
+    count=count+1
+    choice=int(input("enter your choice to continue or not: 1-- > continue, 0-- > exit"))
+average=sum/count
+print("The average of {} number is {} ".format(count,average))
+
+
+
+online class program:
+
+count_female=0
+noofstudents=3
+i=1
+while i<=noofstudents:
+    male_female=input("\nEnter female or male student: femal/male: ")
+    opinion=int(input("Enter your opinion 1 -- > online class\n 2 -- > person class\n 3 -- > mixed\n 4 -- > No comments"))
+    if opinion==1:
+        if male_female=='female':
+            count_female=count_female+1
+        print("\nStudents interested in online class")
+    elif opinion==2:
+        print("\nStudents interested in person class")
+    elif opinion==3:
+        print("\nStudents interested in mixed class")
+    else:
+        print("\nNo comments")
+    i=i+1
+percentage_female=count_female/i*100
+print("The female % is {}".format(percentage_female))
+
+
+
+salesphone program:
+
+earns_per_month=10000
+commission_per_phone=1000
+noof_phone_sale=int(input("enter how many phones salesman sale"))
+if noof_phone_sale>5:
+    commission=noof_phone_sale*100+commission_per_phone
+elif noof_phone_sale>10:
+    commission=(noof_phone_sale-5)*200+commission_per_phone
+monthly_earning=earns_per_month+commission
+if monthly_earning>12000:
+    print("\n Stop the sales. He earnings rs {} amount".format(monthly_earning))
+else:
+    print("\n continue the salesHe earnings rs {} amount".format(monthly_earning))
+          
+          
+          
+# program to calculat GPA
+total=0
+for i in range(1,4):  #  3 students
+    print("\nEnter {} student 3 marks :".format(i))
+    for j in range(0,3):   # 3 subjects
+        mark=int(input("\nenter marks:"))
+        total=total+mark
+    average=total/3
+    percentage=average*100
+    gpa=percentage/9.5
+    print("\n the average of {} student is {}".format(i,average))
+    print("\n the GPA of {} student is {}".format(i,gpa))
+
+          
